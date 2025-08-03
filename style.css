@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 260px;
+}
+
+:root {
+    --your-mom: 35px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+    background: linear-gradient(to right, rgb(43, 0, 43), #122431);
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+}
+
+.navbar {
+    position: fixed;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, purple, #4a90e2) 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    background: linear-gradient(to right, rgb(86, 0, 86), #254871);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+  
+.navbar a {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 20px;
+    text-shadow: 
+    0px 0px 0px black;
+    transition: text-shadow 0.3s ease-in-out;
+}
+  
+.navbar a:hover {
+    text-shadow: 
+    5px 5px 3px black;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+h1 {
+	color: white;
+   font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--your-mom);
+    color: white;
+  }
+  
+  section p {
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+  }
+
+#home {              
+    gap: 15px;  
+    height: 35vh;
+    width: 100vw;
+    border-radius: 0px;
+    background: linear-gradient(to right, rgb(86, 0, 86), #254871);
+}
+
+.bSect {
+  width: 100vw;
+  gap: 15px;
+}
+
+.in {
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 3px solid gray;
+  background-color: white;
+  font-size: 15px;
+  color: black;
+  transition: border-bottom 0.3s ease;
+}
+
+.in:hover {
+  border-bottom: 3px solid #4a90e2;
+  transition: border-bottom 0.3s ease;
+}
+
+.loOu {
+    text-shadow:
+    3px 3px 3px black;
+    font-weight: bold;
+    font-size: 25px;
+    background: linear-gradient(to right, purple, #4a90e2);
+    width: 240px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.logo {
+    color: white;
+    text-shadow:
+    3px 3px 3px black;
+    font-weight: bold;
+    font-size: 25px;
+    background: linear-gradient(to right, rgb(90, 0, 90), #355881);
+    width: 235px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.loTx {
+  height: 40px;
+  width: 3px;
+  opacity: 1;
+  background-color: #4a90e2;
+  animation: blTxDe 1s infinite;
+  position: absolute;
+  top: 11%;
+  left: 83%;
+  border-radius: 8px;
+}
+
+@keyframes blTxDe {
+  0% {opacity: 0}
+  50% {opacity: 1}
+  100% {opacity: 0}
+}
+
+.recCenter {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nouse {
+  width: 100%;
+}
+
+.yt {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 8px;
+  background-color: red;
+  box-shadow:
+  3px 3px 3px black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.ytSh1 {
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  clip-path: polygon(25% 25%, 75% 50%, 25% 75%);
+}
+
+.tk {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  box-shadow:
+  3px 3px 3px black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+}
+
+.tkSh1 {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  clip-path: polygon(50% 50%, 50% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 50%);
+  position: absolute;
+  top: 42%;
+  left: 15%;
+}
+
+.tkSh2 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tkSh3 {
+  width: 8px;
+  height: 32px;
+  border-radius: 0px;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 17%;
+  left: 52%;
+}
+
+.tkSh4 {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  clip-path: polygon(50% 50%, 0% 50%, 0% 100%, 75% 100%);
+  position: absolute;
+  top: 2%;
+  left: 52%;
+}
+
+
+.tkSh5 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Fb {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  box-shadow:
+  3px 3px 3px black;
+  color: white;
+  font-weight: bolder;
+  font-size: 68px;
+}
+
+.Insta {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to top, #ffd746, #fa4842, #9d00ff);
+  box-shadow:
+  3px 3px 3px black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative
+}
+
+.inSh1 {
+  width: 57px;
+  height: 57px;
+  border: 5px solid white;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 6.25%;
+  left: 6.25%;
+}
+
+.inSh2 {
+  width: 35px;
+  height: 35px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 25%;
+  left: 23%;
+}
+
+.inSh3 {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 18%;
+  left: 69%;
+}
+
+.git {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow:
+  3px 3px 3px black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+}
+
+.giSh1 {
+  width: 45px;
+  height: 35px;
+  border: none;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 18%;
+  left: 14%;
+}
+
+.giSh2 {
+  width: 25px;
+  height: 23px;
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 68%;
+  left: 28.5%;
+}
+
+.giSh3 {
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 0px;
+  background-color: black;
+  color: white;
+  clip-path: polygon( 50% 0%, 0% 100%, 100% 100%);
+  font-weight: bold;
+  font-size: 25px;
+  transform: rotate( -25deg);
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+
+.giSh4 {
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 0px;
+  background-color: black;
+  color: white;
+  clip-path: polygon( 50% 0%, 0% 100%, 100% 100%);
+  font-weight: bold;
+  font-size: 25px;
+  transform: rotate( 25deg);
+  position: absolute;
+  top: 5%;
+  left: 60%;
+}
+
+.giSh5 {
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  clip-path: polygon( 50% 88%, 50% 78%, 21% 75%, 14% 69%, 7% 65%, 13% 78%, 19% 85%);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.lv {
+  color: white;
+  text-shadow:
+  3px 3px 3px black;
+  font-weight: bold;
+  font-size: 35px;
+  background: linear-gradient(to right, purple, #4a90e2);
+  box-shadow:
+  3px 3px 3px black;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
