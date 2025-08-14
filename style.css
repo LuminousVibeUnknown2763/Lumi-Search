@@ -112,16 +112,40 @@ h1 {
   height: 30px;
   border-radius: 8px;
   border: none;
-  border-bottom: 3px solid gray;
+  outline: none;
   background-color: white;
   font-size: 15px;
   color: black;
-  transition: border-bottom 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .in:hover {
-  border-bottom: 3px solid #4a90e2;
-  transition: border-bottom 0.3s ease;
+  width: 98%;
+}
+
+.ouIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+  height: 30px;
+  border-radius: 8px;
+  animation: ouInAn 4s infinite;
+  background: linear-gradient(to right, purple, #4a90e2);
+  background-size: 180%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.ouIn:hover {
+  width: 103%;
+  height: 39px;
+}
+
+@keyframes ouInAn {
+  0% {background-position: 0%;}
+  50% {background-position: 100%;}
+  100% {background-position: 0%;}
 }
 
 .loOu {
