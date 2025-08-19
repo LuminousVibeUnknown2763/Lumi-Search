@@ -19,9 +19,9 @@ html {
 body {
     font-family: Arial, sans-serif;
     padding-top: 60px;
-    background: linear-gradient(to right, rgb(43, 0, 43), #122431);
+    background: linear-gradient(to right, rgb(83, 0, 83), rgb(29, 101, 181));
+    width: 100%;
 	 display: flex;
-	width: 100%;
 	 flex-direction: column;
 	 align-items: center;
 	 justify-content: center;
@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 8%;
-    background: linear-gradient(to right, rgb(86, 0, 86), #254871);
+    background: linear-gradient(to right, rgb(83, 0, 83), rgb(29, 101, 181));
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -104,7 +104,7 @@ h1 {
     height: 35vh;
     width: 100vw;
     border-radius: 0px;
-    background: linear-gradient(to right, rgb(86, 0, 86), #254871);
+    background: linear-gradient(to right, purple, #4a90e2);
 }
 
 .bSect {
@@ -173,7 +173,7 @@ h1 {
     3px 3px 3px black;
     font-weight: bold;
     font-size: 25px;
-    background: linear-gradient(to right, rgb(90, 0, 90), #355881);
+    background: linear-gradient(to right, rgb(90, 0, 90), rgb(29, 101, 181));
     width: 235px;
     height: 50px;
     display: flex;
@@ -215,6 +215,10 @@ h1 {
 
 .nouse {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .yt {
@@ -495,4 +499,22 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+}
+
+.coCoCo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.grDiAnSu {
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  border: none;
+  background-color: black;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
 }
